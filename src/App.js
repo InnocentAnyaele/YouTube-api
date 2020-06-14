@@ -9,8 +9,6 @@ import VideoList from './components/VideoList'
 
 import youtube from './api/youtube'
 
-require ('dotenv/config')
-
 
 class App extends React.Component {
 
@@ -33,7 +31,7 @@ class App extends React.Component {
             params: {
                 part: 'snippet',
                 maxResults: 5,
-                key: 'AIzaSyB7Vdd1P5WHKDyPVTth6kxT7QvL2WCiT4g',
+                key: 'your_api_key',
                 // key: process.env.KEY,
                 q: searchTerm,
             }
